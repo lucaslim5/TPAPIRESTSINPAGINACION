@@ -1,0 +1,424 @@
+{
+	"info": {
+		"_postman_id": "16b7fd71-f053-46fc-bb70-49b1f3bb7120",
+		"name": "Persona Api Request",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30230173"
+	},
+	"item": [
+		{
+			"name": "Persona",
+			"item": [
+				{
+					"name": "Get all",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://tpapirestsinpaginacion.onrender.com/api/v1/personas",
+							"protocol": "https",
+							"host": [
+								"tpapirestsinpaginacion",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"personas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get one",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://tpapirestsinpaginacion.onrender.com/api/v1/personas/2",
+							"protocol": "https",
+							"host": [
+								"tpapirestsinpaginacion",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"personas",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 1,\r\n    \"nombre\": \"Maria\",\r\n    \"apellido\": \"Fuseneco\",\r\n    \"dni\": 123467890\r\n}"
+						},
+						"url": {
+							"raw": "https://tpapirestsinpaginacion.onrender.com/api/v1/personas",
+							"protocol": "https",
+							"host": [
+								"tpapirestsinpaginacion",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"personas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 2,\r\n    \"nombre\": \"Maria Elena\",\r\n    \"apellido\": \"Fuseneco\",\r\n    \"dni\": 1234567890,\r\n    \"domicilio\": null,\r\n    \"libros\": []\r\n}"
+						},
+						"url": {
+							"raw": "https://tpapirestsinpaginacion.onrender.com/api/v1/personas/2",
+							"protocol": "https",
+							"host": [
+								"tpapirestsinpaginacion",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"personas",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://tpapirestsinpaginacion.onrender.com/api/v1/personas/1",
+							"protocol": "https",
+							"host": [
+								"tpapirestsinpaginacion",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"personas",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Autores",
+			"item": [
+				{
+					"name": "Get all",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://tpapirestsinpaginacion.onrender.com/api/v1/autores",
+							"protocol": "https",
+							"host": [
+								"tpapirestsinpaginacion",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"autores"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get one",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://tpapirestsinpaginacion.onrender.com/api/v1/autores/1",
+							"protocol": "https",
+							"host": [
+								"tpapirestsinpaginacion",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"autores",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Liliana\",\r\n    \"apellido\": \"Bodoc\",\r\n    \"biografia\": \"Liliana Bodoc nacio en Santa Fe, Argentina, en 1958. Desde sda.das.das.dasd.asd...asdasddzsadasasdasdasdsadadasdasdsa.........dsadasdsa.d.....\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://tpapirestsinpaginacion.onrender.com/api/v1/autores",
+							"protocol": "https",
+							"host": [
+								"tpapirestsinpaginacion",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"autores"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 1,\r\n    \"nombre\": \"Liliana\",\r\n    \"apellido\": \"Bodoc\",\r\n    \"biografia\": \"Liliana Bodoc nacio en Santa Fe, Argentina, en 1958. Desde sda.das.das.dasd.asd...asdasddzsadasasdasdasdsadadasdasdsa...............\"\r\n}"
+						},
+						"url": {
+							"raw": "https://tpapirestsinpaginacion.onrender.com/api/v1/autores/1",
+							"protocol": "https",
+							"host": [
+								"tpapirestsinpaginacion",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"autores",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://tpapirestsinpaginacion.onrender.com/api/v1/autores/1",
+							"protocol": "https",
+							"host": [
+								"tpapirestsinpaginacion",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"autores",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Localidades",
+			"item": [
+				{
+					"name": "Get all",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/localidades",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"localidades"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get one",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/localidades/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"localidades",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 2,\r\n    \"denominacion\" : \"Godoy cruz\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/localidades",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"localidades"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 2,\r\n    \"denominacion\": \"Godoy Cruz\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/localidades/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"localidades",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/localidades/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"localidades",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
